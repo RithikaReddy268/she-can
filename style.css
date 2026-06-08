@@ -1,0 +1,275 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Body */
+body{
+    background:linear-gradient(to bottom,#fff5f7,#ffffff);
+    color:#444;
+}
+
+/* Welcome Marquee */
+marquee{
+    background:#ffe5ea;
+    color:#d62839;
+    font-size:1.1rem;
+    font-weight:600;
+    padding:12px;
+    border-top:2px solid #ffd0d8;
+    border-bottom:2px solid #ffd0d8;
+}
+
+/* Navigation */
+nav{
+    background:#e63946;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    font-size:2rem;
+    font-weight:700;
+}
+
+nav ul{
+    list-style:none;
+}
+
+nav ul li{
+    display:inline-block;
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffe5ea;
+}
+
+/* Hero Banner */
+.hero-banner{
+    text-align:center;
+    padding:70px 20px 40px;
+}
+
+.hero-banner h1{
+    color:#d62839;
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero-banner p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+/* Home Section */
+.home{
+    text-align:center;
+    padding:80px 20px;
+    animation:fadeIn 1s ease-in;
+}
+
+.home h1{
+    color:#d62839;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.home p{
+    max-width:800px;
+    margin:0 auto 25px;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+/* About Section */
+.about{
+    text-align:center;
+    padding:60px 20px;
+    animation:fadeIn 1s ease-in;
+}
+
+.about h1{
+    color:#d62839;
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:950px;
+    margin:auto;
+    line-height:1.9;
+    font-size:1.05rem;
+}
+
+.image-section{
+    text-align:center;
+    margin:50px auto;
+    padding:20px;
+}
+
+.image-section img{
+    display:block;
+    width:80%;
+    max-width:700px;
+    height:auto;
+    margin:0 auto;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Join Section */
+.join-section{
+    text-align:center;
+    padding:40px 20px 60px;
+}
+
+.join-section h2{
+    color:#d62839;
+    margin-bottom:15px;
+}
+
+.join-section p{
+    max-width:650px;
+    margin:0 auto 25px;
+    line-height:1.8;
+}
+
+/* Buttons */
+.btn,
+.join-btn{
+    display:inline-block;
+    background:#ff4d6d;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover,
+.join-btn:hover{
+    background:#d62839;
+    transform:translateY(-4px);
+}
+
+/* Quote Section */
+.quote-section{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.quote-section h2{
+    color:#d62839;
+    margin-bottom:15px;
+}
+
+.quote-section p{
+    line-height:1.8;
+}
+
+/* Cards */
+.cards-section{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:30px 20px 60px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(214,40,57,0.15);
+}
+
+.card h3{
+    color:#d62839;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+/* Footer */
+footer{
+    background:#e63946;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav h2{
+        font-size:1.5rem;
+    }
+
+    .hero-banner h1,
+    .home h1{
+        font-size:2rem;
+    }
+
+    .cards-section{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .image-section img{
+        width:95%;
+    }
+}
